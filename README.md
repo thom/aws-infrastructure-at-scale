@@ -91,7 +91,13 @@ Total monthly cost: $18,043.36 (see [Increased_Cost Estimate.csv](cost-estimates
 
 ## Task 3: Configure Permissions
 
-TBD
+### Updated password policy
+
+![Updated password policy](screenshots/udacity_password_policy.png) _Updated password policy_
+
+### Cloud Trail
+
+See [UdacityCloudTrailLog.csv](logs/UdacityCloudTrailLog.csv).
 
 ## Task 4: Set up Cost Monitoring
 
