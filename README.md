@@ -101,7 +101,7 @@ See [UdacityCloudTrailLog.csv](logs/UdacityCloudTrailLog.csv).
 
 ## Task 4: Set up Cost Monitoring
 
-TBD
+![CloudWatch billing alarm](screenshots/CloudWatch_alarm.png) _CloudWatch billing alarm_
 
 ## Task 5 : Use Terraform to Provision AWS Infrastructure
 
