@@ -87,7 +87,7 @@ If the budget has been increased to $20,000, I would add additional compute and 
 - Upgrade the application server instance types to m5.4xlarge and add 2 additional instances
 - Upgrade the RDS instance types to db.m5.4xlarge, change it to Multi-AZ and add an additional read replica
 
-Total monthly cost: $18,043.36 (see [Increased_Cost Estimate.csv](cost-estimates/Increased_Cost Estimate.csv)).
+Total monthly cost: $18,043.36 (see [Increased_Cost Estimate.csv](cost-estimates/Increased_Cost_Estimate.csv)).
 
 ## Task 3: Configure Permissions
 

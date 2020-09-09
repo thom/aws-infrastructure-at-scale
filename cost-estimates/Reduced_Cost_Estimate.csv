@@ -8,7 +8,3 @@ Reduced Cost Estimate,US East (N. Virginia),,Elastic Load Balancing,0,422.18,506
 Reduced Cost Estimate,US East (N. Virginia),,S3 Intelligent - Tiering,0,321.73,3860.76,USD,S3 INT storage (9 TB per month)
 Reduced Cost Estimate,US East (N. Virginia),,S3 Glacier,0,1305.64,15667.68,USD,S3 Glacier storage (90 TB per month)
 Reduced Cost Estimate,US East (N. Virginia),,AWS Data Transfer,0,2227.11,26725.32,USD,"Data Transfer, Data transfer cost (2227.11)"
-
-
-
-"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
