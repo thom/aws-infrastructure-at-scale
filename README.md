@@ -23,6 +23,27 @@ Plan and provision a cost-effective AWS infrastructure for a new social media ap
 - A Master DB in AZ1 with a read replica in AZ2
 - AWS Route 53
 
+![AWS Social Media Application](schematics/Udacity_Diagram_1.png) _AWS Social Media Application_
+
+### Part 2
+
+Plan a serverless architecture schematic for a new application development project using the following AWS infrastructure and services:
+
+- A user and client machine
+- AWS Route 53
+- A CloudFront Distribution
+- AWS Cognito
+- AWS Lambda
+- API Gateway
+- DynamoDB
+- S3 Storage
+
+![AWS Serverless Application](schematics/Udacity_Diagram_2.png) _AWS Serverless Application_
+
+## Task 2: Calculate Infrastructure Costs
+
+### Initial cost estimate
+
 Assumptions:
 
 - 50,000 users
@@ -49,26 +70,24 @@ Assumptions:
   - Assume that the average HTTP request/response is 2KB and each user performs 1,500 requests per day
   - This leads to about 90MB of HTTP requests/responses per user per month, 4500GB in total
 
-![AWS Social Media Application](schematics/Udacity_Diagram_1.png) _AWS Social Media Application_
+Total monthly cost: $9,619.37 (see [Initial_Cost_Estimate.csv](cost-estimates/Initial_Cost_Estimate.csv)).
 
-### Part 2
+### Reduced cost estimate
 
-Plan a serverless architecture schematic for a new application development project using the following AWS infrastructure and services:
+If the budget was reduced from $8,000-$10,000 to a maximum of $6,500, I would change the data transfer and storage quotas:
+- Change quota of data generated per user per year to 1GB per year and 10GB overall
+- Users are only allowed to cosume 500MB per month (25TB outbound traffic)
 
-- A user and client machine
-- AWS Route 53
-- A CloudFront Distribution
-- AWS Cognito
-- AWS Lambda
-- API Gateway
-- DynamoDB
-- S3 Storage
+Total monthly cost: $6,481.37 (see [Reduced_Cost_Estimate.csv](cost-estimates/Reduced_Cost_Estimate.csv)).
 
-![AWS Serverless Application](schematics/Udacity_Diagram_2.png) _AWS Serverless Application_
+### Increased cost estimate
 
-## Task 2: Calculate Infrastructure Costs
+If the budget has been increased to $20,000, I would add additional compute and redundancy:
+- Upgrade the web server instance types to a1.4xlarge and add 2 additional instances
+- Upgrade the application server instance types to m5.4xlarge and add 2 additional instances
+- Upgrade the RDS instance types to db.m5.4xlarge, change it to Multi-AZ and add an additional read replica
 
-TBD
+Total monthly cost: $18,043.36 (see [Increased_Cost Estimate.csv](cost-estimates/Increased_Cost Estimate.csv)).
 
 ## Task 3: Configure Permissions
 
