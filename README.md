@@ -107,7 +107,16 @@ See [UdacityCloudTrailLog.csv](logs/UdacityCloudTrailLog.csv).
 
 ### Part 1
 
-TBD
+Terraform code to provision (see [main.tf](tf-infrastructure/main.tf)):
+- AWS as the cloud provider
+- Use an existing VPC ID
+- Use an existing public subnet
+- 4 AWS t2.micro EC2 instances named Udacity T2
+- 2 m4.large EC2 instances named Udacity M4
+
+![All instances](screenshots/Terraform_1_1.png) _All instances_
+
+![After deleting 2 instances](screenshots/Terraform_1_2.png) _After deleting 2 instances_
 
 ### Part 2
 
