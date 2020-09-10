@@ -120,7 +120,17 @@ Terraform code to provision (see [main.tf](tf-infrastructure/main.tf)):
 
 ### Part 2
 
-TBD
+Code to deploy an AWS Lambda Function using Terraform:
+- [greet_lambda.py](tf-infrastructure/greet_lambda.py)
+- [main.tf](tf-infrastructure/main.tf)
+- [outputs.tf](tf-infrastructure/outputs.tf)
+- [variables.tf](tf-infrastructure/variables.tf)
+
+![EC2 instances](screenshots/Terraform_2_1.png) _EC2 instances_
+
+![VPC](screenshots/Terraform_2_2.png) _VPC_
+
+![CloudWatch log entry](screenshots/Terraform_2_2.png) _CloudWatch log entry_
 
 ## Task 6: Destroy the Infrastructure using Terraform and prepare for submission
 
