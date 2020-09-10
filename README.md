@@ -130,7 +130,7 @@ Code to deploy an AWS Lambda Function using Terraform:
 
 ![VPC](screenshots/Terraform_2_2.png) _VPC_
 
-![CloudWatch log entry](screenshots/Terraform_2_2.png) _CloudWatch log entry_
+![CloudWatch log entry](screenshots/Terraform_2_3.png) _CloudWatch log entry_
 
 ## Task 6: Destroy the Infrastructure using Terraform and prepare for submission
 
