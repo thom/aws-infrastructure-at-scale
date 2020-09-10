@@ -134,7 +134,7 @@ Code to deploy an AWS Lambda Function using Terraform:
 
 ## Task 6: Destroy the Infrastructure using Terraform and prepare for submission
 
-TBD
+![Destroyed infrastructure](screenshots/Terraform_destroyed.png) _Destroyed infrastructure_
 
 ## Requirements
 
