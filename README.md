@@ -76,9 +76,19 @@ Total monthly cost: $9,619.37 (see [Initial_Cost_Estimate.csv](cost-estimates/In
 
 If the budget was reduced from $8,000-$10,000 to a maximum of $6,500, I would change the data transfer and storage quotas:
 - Change quota of data generated per user per year to 1GB per year and 10GB overall
-- Users are only allowed to cosume 500MB per month (25TB outbound traffic)
+- Users are only allowed to consume 500MB per month (25TB outbound traffic)
 
 Total monthly cost: $6,481.37 (see [Reduced_Cost_Estimate.csv](cost-estimates/Reduced_Cost_Estimate.csv)).
+
+#### Rationale for changes
+
+The main cost drivers are the S3 storage and the data transfer (CloudFront):
+- Cutting the quota of data generated per user in half (from 2GB per year and 20GB overall to 1 GB per year and 10GB overall), reduces the cost for S3 storage from $2,590 to $1,630
+- Restricting the outbound traffic from 1GB to 500MB per user reduces data transfer cost from $4,400 to $2,230
+
+Other possible cost saving options which I have not implemented but should be reviewed:
+- Replace the EC2 On Demand with Reserved Instances
+- Reduce the number of EC2 instances for web and application server
 
 ### Increased cost estimate
 
@@ -88,6 +98,13 @@ If the budget has been increased to $20,000, I would add additional compute and 
 - Upgrade the RDS instance types to db.m5.4xlarge, change it to Multi-AZ and add an additional read replica
 
 Total monthly cost: $18,043.36 (see [Increased_Cost Estimate.csv](cost-estimates/Increased_Cost_Estimate.csv)).
+
+#### Rationale for changes
+
+With the additional budget, the server availability and capacity should be increased:
+- Upgrading the web server instance types to a1.4xlarge and adding 2 additional instances increases the capacity and the availability
+- Upgrading the application server instance types to m5.4xlarge and adding 2 additional instances increases the capacity and the availability
+- Upgrading the RDS instance types to db.m5.4xlarge, changing it to Multi-AZ and adding  an additional read replica increases the capacity and the availability
 
 ## Task 3: Configure Permissions
 
